@@ -89,7 +89,7 @@ npm start
 Open your browser and navigate to http://localhost:3000.
 
 Deployment
-Cyber Rakshak is deployed at: https://cyberrakkshak.netlify.app/
+Cyber Rakshak is deployed at: Vercel
 
 Project Owner
 Jatin Gupta
