@@ -1,0 +1,192 @@
+.help-section {
+  background: linear-gradient(135deg, #01021a 0%, #0a0e3a 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.help-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(0, 255, 255, 0.03)" d="M0,0 L100,0 L100,100 L0,100 Z" /></svg>');
+  background-size: 20px 20px;
+  opacity: 0.5;
+}
+
+.help-header {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.help-header h2 {
+  font-size: 2.5rem;
+  margin: 20px 0 10px;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.help-subtitle {
+  font-size: 1.2rem;
+  color: #a0f0f0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.shield-icon {
+  font-size: 3rem;
+  color: #00ffff;
+  animation: pulse 2s infinite;
+}
+
+.help-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.help-card {
+  background: rgba(5, 10, 40, 0.7);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 30px 25px;
+  width: 280px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.help-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(0, 255, 255, 0.5);
+  box-shadow: 0 15px 30px rgba(0, 255, 255, 0.2);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+.help-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.help-card p {
+  font-size: 1rem;
+  color: #c0c0ff;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.help-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(0, 255, 255, 0.1);
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.help-link:hover {
+  background: rgba(0, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.prevention-tip {
+  background: rgba(0, 255, 255, 0.1);
+  border-left: 4px solid #00ffff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  border-radius: 0 10px 10px 0;
+}
+
+.tip-icon {
+  font-size: 2rem;
+  color: #00ffff;
+  flex-shrink: 0;
+}
+
+.prevention-tip p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.prevention-tip strong {
+  color: #00ffff;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@media screen and (max-width: 768px) {
+  .help-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .help-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .help-header h2 {
+    font-size: 2rem;
+  }
+  
+  .help-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .help-section {
+    padding: 40px 15px;
+  }
+  
+  .help-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .prevention-tip {
+    flex-direction: column;
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid #00ffff;
+    border-radius: 0 0 10px 10px;
+  }
+}
