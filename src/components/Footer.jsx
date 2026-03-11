@@ -54,7 +54,7 @@ function Footer() {
             </a>
           </p>
           <p className="institution">
-            C5JM University, Kanpur
+            CSJM University, Kanpur
           </p>
         </div>
       </div>
